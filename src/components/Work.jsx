@@ -2,19 +2,21 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
-    year: 2019,
+    year: 2021,
     company: "Jompha Technology",
+    location: "Bangladesh",
     title: "Web Development",
-    duration: "3 years",
+    duration: "2 years",
     details:
-      "Html, Css, Tailwind, Javascript, Web Application Tester, DevTools and Browser Extensions, Responsive Web Design, Static Website Generators and CMS Templates, Git/Github,",
+      "Html, Css, Tailwind, Javascript, Web Application Tester, DevTools and Browser Extensions, Responsive Web Design, Static Website Generators and CMS Templates, Git/Github",
   },
   {
     year: 2023,
     company: "Guru Technology Corporation",
+    location: "Nigeria",
     title: "Front End Development-(Internship)",
     duration: "Committed",
-    details: "Progressive Web Application Frameworks",
+    details: "Progressive Web Application Frameworks like: React js",
   },
 ];
 const Work = () => {
@@ -30,6 +32,7 @@ const Work = () => {
             year={item.year}
             title={item.title}
             company={item.company}
+            location={item.location}
             duration={item.duration}
             details={item.details}
           />

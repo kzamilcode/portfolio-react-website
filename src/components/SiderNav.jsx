@@ -24,8 +24,9 @@ const SideNav = () => {
       </button>
 
       {nav ? (
-        <div className="fixed top-0 pt-40 w-full h-screen bg-white flex flex-col items-center z-20">
+        <div className="fixed top-0 pt-40 w-full h-full bg-white flex flex-col items-center z-20">
           <a
+            onClick={handleNav}
             href="#main"
             className="w-[70%] flex justify-center mx-auto items-center rounded-full shadow-lg bg-gray-200 shadow-gray-400 p-4 mt-2 cursor-pointer hover:scale-105 transition-all duration-200 ease-in "
           >
@@ -33,6 +34,7 @@ const SideNav = () => {
             <span className="pl-4">Home</span>
           </a>
           <a
+            onClick={handleNav}
             href="#work"
             className="w-[70%] flex justify-center mx-auto items-center rounded-full shadow-lg bg-gray-200 shadow-gray-400 p-4 mt-2 cursor-pointer hover:scale-105 transition-all duration-200 ease-in"
           >
@@ -40,6 +42,7 @@ const SideNav = () => {
             <span className="pl-4">Work</span>
           </a>
           <a
+            onClick={handleNav}
             href="#projects"
             className="w-[70%] flex justify-center mx-auto items-center rounded-full shadow-lg bg-gray-200 shadow-gray-400 p-4 mt-2 cursor-pointer hover:scale-105 transition-all duration-200 ease-in"
           >
@@ -47,6 +50,7 @@ const SideNav = () => {
             <span className="pl-4">Projects</span>
           </a>
           <a
+            onClick={handleNav}
             href="#main"
             className="w-[70%] flex justify-center mx-auto items-center rounded-full shadow-lg bg-gray-200 shadow-gray-400 p-4 mt-2 cursor-pointer hover:scale-105 transition-all duration-200 ease-in"
           >
@@ -54,6 +58,7 @@ const SideNav = () => {
             <span className="pl-4">Resume</span>
           </a>
           <a
+            onClick={handleNav}
             href="#contact"
             className="w-[70%] flex justify-center mx-auto items-center rounded-full shadow-lg bg-gray-200 shadow-gray-400 p-4 mt-2 cursor-pointer hover:scale-105 transition-all duration-200 ease-in"
           >

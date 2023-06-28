@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const WorkItem = ({ year, title, duration, details, company }) => {
+const WorkItem = ({ year, title, duration, details, company, location }) => {
   return (
     <ol className="flex flex-col md:flex-row text-black relative border-l border-stone-300">
       <li className="mb-10 ml-4">
@@ -12,10 +12,12 @@ const WorkItem = ({ year, title, duration, details, company }) => {
             <span className="font-medium">{title}</span>
           </div>
 
-          <div className=" flex gap-x-2 ">
+          <div className="flex gap-x-2">
             <span className="font-bold">{company}</span>
+
             <span className="text-blue-400">{duration}</span>
           </div>
+          <span className="font-bold">{location}</span>
           <span className="block leading-[30px] text-slate-500">{details}</span>
         </div>
       </li>
